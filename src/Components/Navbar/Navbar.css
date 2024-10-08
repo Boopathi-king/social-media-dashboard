@@ -1,0 +1,112 @@
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right,  var(--dark-toggle-liner-1), var(--dark-toggle-liner-2));
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    aspect-ratio: 1;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: var(--dark-bg);
+    transition: .4s;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(23px);
+    background-color: var(--light-bg);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-blue-text);
+    /* margin-left: 10px; */
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15rem;
+    margin-top: -2rem;
+    /* max-width: 80rem; */
+    background-color: var(--dark-top-bg);
+    padding : 1em;
+    border-bottom-right-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+  }
+
+  .dash-title{
+    font-size: 2.5rem;
+    color: var(--dark-light-text);
+    margin-left: 40px;
+  }
+
+  .dash-total{
+    font-size: 1.rem;
+    color: var(--dark-blue-text);
+    margin-left: 40px;
+  }
+
+  .header.Light{
+    background-color: var(--light-top-bg);
+  }
+  
+  .header.Light .dashboard {
+    color: var(--light-dark-text);
+  }
+  
+  .header.Light .dash-title {
+    color: var(--light-dark-text);
+  }
+  
+  .header.Light .dash-total {
+    color: var(--light-blue-text);
+  }
+  
+  .header.Light .toggle {
+    color: var(--light-blue-text);
+  }
+  
+  .header.Light .slider {
+    background: var(--light-toggle);
+  }
+  
+  .header.Light .slider:hover {
+    background-image: linear-gradient(to right, var(--dark-toggle-linear-1), var(--dark-toggle-linear-2));
+  }

@@ -1,0 +1,109 @@
+/* StatsCard.css */
+.stats-card {
+    background-color: var(--dark-card-bg);
+    padding: 12px;
+    border-radius: 10px;
+    width: 280px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+    transition: transform 0.3s;
+    border-top: 7px solid;
+  }
+
+  .stats-card.light-theme {
+    background-color: var(--light-card-bg);
+  }
+  
+  .stats-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .header-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: px; */
+    margin-top: 0;
+    /* border-top: 6px solid; */
+    height: 100px;
+    width: 250px;
+  }
+  
+  .header-one span {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  
+  .handle {
+    font-size: 12px;
+    opacity: 0.75;
+  }
+  
+  .followers-count {
+    margin: 10px 10px;
+
+  }
+  
+  .followers-count h2 {
+
+    font-size: 49px;
+    letter-spacing: 2px;
+    margin: 10px;
+    margin-top: -20px;
+  }
+  
+  .followers-count p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.75;
+  }
+  
+  .change-today {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .change-today img{
+    width: 12px;
+    height: 10px;
+    margin-right: 5px;
+    gap: 10px;
+  }
+  
+  .positivee {
+    color: #1db489;
+  }
+  
+  .negativee {
+    color: #dc414c;
+  }
+  
+
+  .stats-cards-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--dark-bg);
+    max-width: 80rem;
+    margin: auto;
+  }
+  
+
+  .stats-cards-container.light-theme{
+    background-color: var(--light-bg);
+  }
+
+
+@media (max-width: 380px) {
+    .stats-cards-container {
+        flex-direction: column;
+    }
+    
+}
+  

@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Toggle colors */
+:root{
+    --dark-toggle-liner-1 : hsl(210,78%, 56%);
+    --dark-toggle-liner-2 : hsl(146, 68%, 55%);
+    --light-toggle : hsl(230, 22%, 74%);
+
+    /* Colors dark theme */
+    --dark-bg : hsl(230, 17%, 14%);
+    --dark-top-bg: hsl(232, 19%, 15%);
+    --dark-card-bg: hsl(228, 28%, 20%);
+    --dark-blue-text: hsl(228, 34%, 66%);
+    --dark-light-text: hsl(0, 0%, 100%);
+
+    /* Colors light theme */
+    --light-bg: hsl(0, 0%, 100%);
+    --light-top-bg: hsl(225, 100%, 98%);
+    --light-card-bg: hsl(227, 47%, 96%);
+    --light-blue-text: hsl(228, 12%, 44%);
+    --light-dark-text: hsl(230, 17%, 14%);
+
+    /* primary color */
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-linear-1: hsl(37, 97%, 70%);
+    --instagram-linear-2: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+
+
+}
+
+
+body{
+    background-color: var(--dark-bg);
+    transition: background-color 0.4s;
+}
+
+body.Light {
+    background-color: var(--light-bg);
 }
