@@ -10,8 +10,8 @@
 
 
 .Stat-dashboard {
-    /* width: 80rem; */
-    margin: 0 auto;
+    width: 80rem;
+    margin: 20px 35px;
     color: white;
   }
 
@@ -34,7 +34,6 @@
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* flex-wrap: wrap; */
     min-height: 100px;
     gap: 20px;
   }
