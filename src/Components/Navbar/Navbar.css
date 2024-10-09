@@ -110,3 +110,74 @@
   .header.Light .slider:hover {
     background-image: linear-gradient(to right, var(--dark-toggle-linear-1), var(--dark-toggle-linear-2));
   }
+
+
+  @media (max-width: 1440px ) {
+
+    .header{
+      max-width: 100rem;
+    }
+    
+  }
+
+  @media (max-width: 1080px) {
+    .header{
+      max-width: 80rem;
+      flex-direction: column;
+    }
+    
+  }
+
+  @media (max-width: 900px) {
+    .header {
+      max-width: 60rem;
+      flex-direction: column;
+    }
+
+    .dash-title{
+      font-size: 1.75rem;
+      margin-top: 30px;
+    }
+
+    .dash-total{
+      font-size: 1rem;
+    }
+    
+  }
+
+  @media (max-width: 600px) {
+    .header {
+      width: 100%;
+      max-width: 30rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dash-title{
+      font-size: 1.65rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      width: 100%;
+      max-width: 50rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dash-title{
+      font-size: 1.9rem;
+      margin-bottom: 15px;
+    }
+
+    .dash-total{
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    .toggle{
+      font-size: 1.3rem;
+    }
+  }

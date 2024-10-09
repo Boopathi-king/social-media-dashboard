@@ -7,7 +7,7 @@ import downArrow from './../../images/icon-down.svg';
 import upArrow from './../../images/icon-up.svg';
 import './content.css'
 
-const content = () => {
+const content = ({ toggle }) => {
 
     const data = [
         { title: 'Page Views', platform: 'facebook', value: 87, change: '3%', positive: true },
@@ -28,12 +28,12 @@ const content = () => {
       };
     
   return (
-    <div className='wrapper'>
-    <div className="Stat-dashboard">
+    <div className={`wrapper ${toggle ? 'light-theme' : ''}`}>
+    <div className={`Stat-dashboard ${toggle ? 'light-theme' : ''}`}>
     <h1>Overview - Today</h1>
     <div className="stats-grid">
       {data.map((stat, index) => (
-        <div key={index} className={`stat-box ${stat.positive ? 'positive' : 'negative'}`}>
+        <div key={index} className={`stat-box ${toggle ? 'light-theme' : ''} ${stat.positive ? 'positive' : 'negative'}`}>
           <div className="stat-header">
             <span>{stat.title}</span>
             <span>

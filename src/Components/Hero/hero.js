@@ -7,10 +7,12 @@ import youtubeIcon from './../../images/icon-youtube.svg';
 import downArrow from './../../images/icon-down.svg';
 import upArrow from './../../images/icon-up.svg';
 
-const hero = () => {
+const hero = ({ toggle }) => {
+
+  // const { toggle } = useContext(ThemeContext);
   return (
-    <div className="stats-cards-container">
-      <div className="stats-card " style={{ borderTopColor: '#1877F2' }}>
+    <div className={`stats-cards-container ${toggle ? 'light-theme' : ''}`}>
+      <div className={`stats-card ${toggle ? 'light-theme' : ''}`} style={{ borderTopColor: '#1877F2' }}>
         <div className="header-one"  >
           <span><img src={facebookIcon} alt='facebookicon'/></span>
           <span className="handle"> @nathanf</span>
@@ -25,7 +27,7 @@ const hero = () => {
       </div>
       
 
-      <div className="stats-card" style={{ borderTopColor: '#1DA1F2' }}>
+      <div className={`stats-card ${toggle ? 'light-theme' : ''}`} style={{ borderTopColor: '#1DA1F2' }}>
         <div className="header-one" >
           <span><img src= {twitterIcon} alt='twittericon' /> </span>
           <span className="handle">@nathanf</span>
@@ -39,7 +41,7 @@ const hero = () => {
         </div>
       </div>
 
-      <div className="stats-card" style={{ borderTopColor: '#E1306C' }}>
+      <div className={`stats-card ${toggle ? 'light-theme' : ''}`} style={{ borderTopColor: '#E1306C' }}>
         <div className="header-one" >
           <span><img src= {instagramIcon} alt='instagramicon' /></span>
           <span className="handle">@realnathanf</span>
@@ -53,7 +55,7 @@ const hero = () => {
         </div>
       </div>
 
-      <div className="stats-card" style={{ borderTopColor: '#FF0000' }}>
+      <div className={`stats-card ${toggle ? 'light-theme' : ''}`} style={{ borderTopColor: '#FF0000' }}>
         <div className="header-one" >
           <span><img src= {youtubeIcon} alt='youtubeIcon' /></span>
           <span className="handle">Nathan F.</span>

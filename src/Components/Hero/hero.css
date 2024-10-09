@@ -6,7 +6,7 @@
     width: 280px;
     height: 250px;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     color: #fff;
     transition: transform 0.3s;
     border-top: 7px solid;
@@ -14,6 +14,7 @@
 
   .stats-card.light-theme {
     background-color: var(--light-card-bg);
+    color: var(--light-dark-text);
   }
   
   .stats-card:hover {
@@ -87,22 +88,36 @@
 
   .stats-cards-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: var(--dark-bg);
-    max-width: 80rem;
+    width: 100%;
+    /* max-width: 80rem; */
     margin: auto;
   }
   
 
   .stats-cards-container.light-theme{
     background-color: var(--light-bg);
+    width: 100%;
   }
 
+@media (max-width: 780px) {
 
-@media (max-width: 380px) {
+  .stats-cards-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
     .stats-cards-container {
         flex-direction: column;
+        align-items: center;
     }
     
 }
